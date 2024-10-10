@@ -1,95 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Metadata and link to CSS file -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hajime No Ippo</title>
     <link rel="stylesheet" href="pulse.css">
-
 </head>
 <body style="background: linear-gradient(to left, #e40707, #ecb316);">
 
-    <!-- Page heading -->
-<!-- Button that sends you to the respective video  -->
-    <!-- <a href="https://youtu.be/xR7yBVLj5jc?si=EIjDKQ0uDRh_Ddbx&t=80" target="_blank">
-        <button class = "watch-button-ippo">
-           Watch Video
-        </button>
-       </a> -->
+    <!-- Button that links to the video of Hajime No Ippo -->
+    <a href="https://youtu.be/xR7yBVLj5jc?si=EIjDKQ0uDRh_Ddbx&t=80" target="_blank">
+        <button class="watch-button-ippo">Watch Video</button>
+    </a>
 
-    <!-- <iframe src="https://youtu.be/xR7yBVLj5jc?si=EIjDKQ0uDRh_Ddbx&t=80" frameborder="0"></iframe> -->
-    <div class ="ippo-title">
+    <!-- Title of the page -->
+    <div class="ippo-title">
         <h1 style="font-family: 'Rockwell', serif;">Hajime No ippo</h1>
     </div>
-    
-   
-    <!-- Image -->
+
+    <!-- Image container with slider arrows for next/previous -->
     <div class="containerippo" id="ippo-id">
-        <img src="https://i.pinimg.com/564x/f7/9d/d2/f79dd2eceea231c956de129f0db4a0de.jpg"  class="ippo-img" alt="Image 1">
-        <div class ="slider-arrow"> &gt;</div>
-        <div class ="slider-arrow2" id="arrow2"> &lt;</div>
+        <!-- Image of Hajime No Ippo -->
+        <img src="https://i.pinimg.com/564x/f7/9d/d2/f79dd2eceea231c956de129f0db4a0de.jpg" class="ippo-img" alt="Image 1">
+        <!-- Slider arrow buttons -->
+        <div class="slider-arrow"> &gt;</div>
+        <div class="slider-arrow2" id="arrow2"> &lt;</div>
     </div>
 
-    
+    <!-- Buttons to hide and unhide the image -->
     <button class="hide-button" onclick="hideMangacover('ippo-id')">Hide</button>
     <button class="unhide-button" onclick="unhideMangacover('ippo-id')">Unhide</button>    
 
+    <!-- Paragraph giving a review about Hajime No Ippo -->
     <div class="par-container">
         <p class="vertical-text" style="font-family: 'Impact', sans-serif;">
             This show is nearly perfect—10/10. Ippo’s journey from a nobody to a skilled boxer, 
             along with well-developed side characters, is incredible. Even the opponent boxers have 
             backstories that make them relatable. The fight choreography and build-ups were top-notch, 
             especially for its time. If you haven't seen it, I highly recommend it—one of the best sports
-             anime out there! That video captures the emotion of the fights perfectly.
-            
+            anime out there! That video captures the emotion of the fights perfectly.
         </p>
     </div>
     
-    <!-- button that goes back to home page  -->
+    <!-- Button to go back to the home page -->
     <div style="margin-top: 20px; text-align: left;">
         <a href="index.html">
-            <button class = "ippo-button"> Go back to home</button>  
+            <button class="ippo-button">Go back to home</button>
         </a>
-    </div>     
+    </div>
 
-       <!-- Like button & dislike button  -->
-       <section class="button-grid">
-            <button class="like-up" id="like-button">
-                <img src="https://cdn-icons-png.freepik.com/512/6619/6619136.png?fd=1&filename=thumbs-up_6619136.png" 
-                    alt="Like" class="button-icon-ippo">
-                
-            </button>
+    <!-- Like and dislike buttons with images -->
+    <section class="button-grid">
+        <!-- Like button -->
+        <button class="like-up" id="like-button">
+            <img src="https://cdn-icons-png.freepik.com/512/6619/6619136.png?fd=1&filename=thumbs-up_6619136.png" 
+                alt="Like" class="button-icon-ippo">
+        </button>
+        <!-- Dislike button -->
+        <button class="dislike-up" id="dislike-button">
+            <img src="https://cdn-icons-png.freepik.com/512/3329/3329332.png?fd=1&filename=dislike_3329332.png" 
+            alt="Dislike" class="button-icon-ippoo">
+        </button>
+    </section>
 
-            <button class="dislike-up" id="dislike-button">
-                <img src="https://cdn-icons-png.freepik.com/512/3329/3329332.png?fd=1&filename=dislike_3329332.png" 
-                alt="Dislike" class="button-icon-ippoo">
-            </button>
-       </section>
-
-    <section class="comment-grid">Comment Section
+    <!-- Comment section for users to leave comments -->
+    <section class="comment-grid">
+        Comment Section
         <textarea id="comment-text-area" placeholder="Leave any comments here"></textarea>
         <button id="comment-button">Enter</button>
     </section>
 
-        <section>
-            <button id="feedbackButton">Give Feedback</button>
-            <div id="feedbackFormSection" class="feedback-form-section" style="display: none;">
-                <h2>Feedback Form</h2>
-                <form id="feedbackForm">
-                    <label for="feedback">Your Feedback:</label>
-                    <textarea id="feedback" rows="4" required></textarea>
-                    
-                    <label for="feedbackName">Your Name:</label>
-                    <input type="text" id="feedbackName">
-                    
-                    <label for="feedbackEmail">Your Email:</label>
-                    <input type="email" id="feedbackEmail">
-            
-                    <button class="submit-button">Submit Feedback</button>
-                </form>
-                <p id="feedbackResponse"></p>
-            </div>
-        </section>   
+    <!-- Feedback form section -->
+    <section>
+        <!-- Button to open feedback form -->
+        <button id="feedbackButton">Give Feedback</button>
+        
+        <!-- Hidden feedback form (displayed when button is clicked) -->
+        <div id="feedbackFormSection" class="feedback-form-section" style="display: none;">
+            <h2>Feedback Form</h2>
+            <form id="feedbackForm">
+                <!-- Text area for feedback -->
+                <label for="feedback">Your Feedback:</label>
+                <textarea id="feedback" rows="4" required></textarea>
+                
+                <!-- Field to enter name -->
+                <label for="feedbackName">Your Name:</label>
+                <input type="text" id="feedbackName">
+                
+                <!-- Field to enter email -->
+                <label for="feedbackEmail">Your Email:</label>
+                <input type="email" id="feedbackEmail">
+                
+                <!-- Submit button for the feedback form -->
+                <button class="submit-button">Submit Feedback</button>
+            </form>
+            <p id="feedbackResponse"></p>
+        </div>
+    </section>
+
 </body>
+
+<!-- Link to external JavaScript file (pulse.js) -->
 <script defer src="pulse.js"></script> 
 </html>

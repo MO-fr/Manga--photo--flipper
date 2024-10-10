@@ -1,11 +1,10 @@
-//////////////////////////////Java For ippo page/////////////////////////////////////////////////////
-
+//////////////////////////////JavaScript For ippo page/////////////////////////////////////////////////////
+// get the url of the window, check to see if it contains the HTML page 
+if (window.location.href === "http://127.0.0.1:5500/ippo.html"){
 
 let url = "ippo.html";
-let result = text.includes("ippo.html");
+let result = url.includes("ippo.html");
 
-// get the url of the window, check to see if it contains the HTML page 
-if (window.location.href === result || window.location.href === result){
 
     
 // Show feedback form when the feedback button is clicked

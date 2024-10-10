@@ -1,452 +1,397 @@
+/****************************************** MAIN HTML PAGE ************************************************/
 
-.container {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 10px;
-    justify-content: center; /* centers items horizontally */
-    align-items: center; 
-}
-
-.grid-item {
-
-    /* border: 1xp solid red; */
-    /* Background color for Image 1 container */
-    height: auto; 
-    width: auto; 
-
-
-}
-
-.grid-item > img  {
-    opacity: 30%;
-    width: 80%;
-    height: 70%;
-    box-shadow: 0 20px 8px rgba(45, 45, 45, 0.5);
-
-    /* Background color for Image 1 container */
-    background-color: #da1313; 
-    padding: 20px; /* Adds padding inside the container */
-    /* margin-left: 13px; */
-    border-radius: 5%; /* Rounds the corners of the container */ 
+/* Grid container for your items */
+.container1 {
+display: flex;
+justify-content: center; /* Center horizontally */
+align-items: center;
+width: 19%; /* Container width */
+box-shadow: 0 20px 8px rgba(45, 45, 45, 0.5);
+background-color: #da1313; /* Background color for Image 1 container */
+padding: 20px; /* Adds padding inside the container */
+margin-left: 13px; /* Adjusts the container's position */
+border-radius: 20%; /* Rounds the corners of the container */
+transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 
-
-.right-img{
-
-    margin-right: 10%;
-    width: 470px;
-    height: 800px;
-
-}
-
-.left-img{
-    width: 470px;
-    height: 800px;
-    
-}
-
-.middle-img {
-    width: 470px;
-    height: 800px;
-}
-
-
-/* Container for Image 1 */ /***************** MAIN HTML PAGE ****************************/
-
-/* .container1 {
-    display: flex;
-    justify-content: center; /* Center horizontally 
-    align-items: center;
-    width: 19%; /* Container width 
-    box-shadow: 0 20px 8px rgba(45, 45, 45, 0.5);
-
-    background-color: #da1313; /* Background color for Image 1 container */
-    padding: 20px; /* Adds padding inside the container */
-    margin-left: 13px; /* Adjusts the container's position */
-    border-radius: 20%; /* Rounds the corners of the container */
-    transition: background-color 0.3s ease, transform 0.3s ease;
-}
 .container1:hover{
-    background-color: rgb(47, 47, 150);
-    transform: scale(1.1); /* Slightly enlarges the button 
-} */
+background-color: rgb(47, 47, 150);
+transform: scale(1.1); /* Slightly enlarges the button */
+}
 
 
 /* Container for Image 2 */
 .container2 {
-    display: flex;
-    justify-content: center; /* Center horizontally */
-    align-items: center;
-    margin: -400px;
-    width: 19%; /* Container width */
-    background-color: #b3be47de; /* Background color for Image 2 container */
-    padding: 20px; /* Adds padding inside the container */
-    position: relative;
-    bottom: 25px;
-    left: 866px;
-    border-radius: 20%; /* Rounds the corners of the container */
-    box-shadow: 0 24px 8px rgba(0, 0, 0, 0.5);
-    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth hover effect */
+display: flex;
+justify-content: center; /* Center horizontally */
+align-items: center;
+margin: -400px;
+width: 19%; /* Container width */
+background-color: #b3be47de; /* Background color for Image 2 container */
+padding: 20px; /* Adds padding inside the container */
+position: relative;
+bottom: 25px;
+left: 866px;
+border-radius: 20%; /* Rounds the corners of the container */
+box-shadow: 0 24px 8px rgba(0, 0, 0, 0.5);
+transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth hover effect */
 }
 .container2:hover{
-    background-color: rgb(216, 34, 155);
-    transform: scale(1.1); /* Slightly enlarges the button */
+background-color: rgb(216, 34, 155);
+transform: scale(1.1); /* Slightly enlarges the button */
 }
-
 
 
 /* Container for Image 3 */
-.container3 {
-    display: flex;
-    justify-content: center; /* Center horizontally */
-    align-items: center;
-    margin: -480px;
-    width: 19%; /* Container width */
-    background-color: #000000; /* Background color for Image 3 container */
-    padding: 20px; /* Adds padding inside the container */
-    box-shadow: 0 30px 8px rgba(0, 0, 0, 0.5);
-    margin-left: 930px; /* Adjusts the container's position */
-    border-radius: 20%; /* Rounds the corners of the container */
-    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth hover effect */
+.container3{
+display: flex;
+justify-content: center; /* Center horizontally */
+align-items: center;
+margin: -480px;
+width: 19%; /* Container width */
+background-color: #000000; /* Background color for Image 3 container */
+padding: 20px; /* Adds padding inside the container */
+box-shadow: 0 30px 8px rgba(0, 0, 0, 0.5);
+margin-left: 930px; /* Adjusts the container's position */
+border-radius: 20%; /* Rounds the corners of the container */
+transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth hover effect */
 }
 
 .container3:hover{
-    background-color: rgb(255, 255, 255);
-    transform: scale(1.1); /* Slightly enlarges the button */
+background-color: rgb(255, 255, 255);
+transform: scale(1.1); /* Slightly enlarges the button */
 }
 
 .ippo-img{
-    position: relative;
-    left: 18px;
+position: relative;
+left: 18px;
 }
 
-/* div img {
-    height: 400px;
-    width: 260px;
-    border-radius: 60px; 
-    display: inline;    
-} */
-
-
+div img {
+height: 400px;
+width: 260px;
+border-radius: 60px; 
+display: inline;
+}
 /********************************************* CSS FOR IPPO *************************************************/
 
 /* Container for Image */
 .containerippo {
-    display: flex;
-    justify-content: center; /* Center horizontally */
-    align-items: center;
-    width: 19%; /* Container width */
-    box-shadow: 0 20px 8px rgba(45, 45, 45, 0.5);
-    /* background-color: #da1313; Background color */
-    padding: 20px; /* Adds padding inside the container */
-    position: relative;
-    left: 500px;
-    border-radius: 20%; /* Rounds the corners of the container */
+display: flex;
+justify-content: center; /* Center horizontally */
+align-items: center;
+width: 19%; /* Container width */
+box-shadow: 0 20px 8px rgba(45, 45, 45, 0.5);
+background-color: #da1313; /* Background color */
+padding: 20px; /* Adds padding inside the container */
+position: relative;
+left: 100px;
+border-radius: 20%; /* Rounds the corners of the container */
 }
 
 .ippo-button:hover{
-    background-color: #0ada2d; /* Change to a lighter green */
-    transform: scale(1.1); /* Slightly enlarges the button */
+background-color: #0ada2d; /* Change to a lighter green */
+transform: scale(1.1); /* Slightly enlarges the button */
 }
 
 .ippo-title{
-    position: relative;
-    left: 510px;
-    bottom: 30px;
+position: relative;
+left: 499px;
+bottom: 30px;
 }
 
 .slider-arrow{
-    position: relative;
-    font-family: monospace;
-    left: 26px;
-    font-size: 30px;
-    font-weight: bold;
-    background-color: #da1313;
-    color: white;
-    border-radius: 20px;
+position: relative;
+font-family: monospace;
+left: 26px;
+font-size: 30px;
+font-weight: bold;
+background-color: #da1313;
+color: white;
+border-radius: 20px;
 }
 
 
 
 .slider-arrow2{
-    font-family: monospacce;
-    position: relative;
-    font-family: monospace;
-    font-size: 30px;
-    top: 40px;
-    right: -10px;
-    font-weight: bold;
-    background-color: #da1313;
-    color: white;
-    border-radius: 20px;
+font-family: monospacce;
+position: relative;
+font-family: monospace;
+font-size: 30px;
+top: 40px;
+right: -10px;
+font-weight: bold;
+background-color: #da1313;
+color: white;
+border-radius: 20px;
 }
 
 
 
 .ippo-button{
-    margin-left: 13px;
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 18px; /* Adjust font size */
-    padding: 12px 24px;
-    background-color: #0d18b9; /* Green color */
-    color: #ffffff;
-    border: none;
-    border-radius: 30px;
-    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
-    cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.3s ease;
+margin-left: 13px;
+font-family: 'Courier New', Courier, monospace;
+font-size: 18px; /* Adjust font size */
+padding: 12px 24px;
+background-color: #0d18b9; /* Green color */
+color: #ffffff;
+border: none;
+border-radius: 30px;
+box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+cursor: pointer;
+transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 .watch-button-ippo:hover{
-    background-color: #0ada2d; /* Change to a lighter green */
-    transform: scale(1.1); /* Slightly enlarges the button */
+background-color: #0ada2d; /* Change to a lighter green */
+transform: scale(1.1); /* Slightly enlarges the button */
 }
 
 .watch-button-ippo{
-    margin-left: 13px;
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 18px; /* Adjust font size */
-    padding: 12px 24px;
-    background-color: #0d18b9; /* Green color */
-    color: #ffffff;
-    border: none;
-    border-radius: 30px;
-    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
-    cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.3s ease;
+margin-left: 13px;
+font-family: 'Courier New', Courier, monospace;
+font-size: 18px; /* Adjust font size */
+padding: 12px 24px;
+background-color: #0d18b9; /* Green color */
+color: #ffffff;
+border: none;
+border-radius: 30px;
+box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+cursor: pointer;
+transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
-/* img {
-    height: 400px;
-    width: 260px;
-    border-radius: 60px;
-} */
+img {
+height: 400px;
+width: 260px;
+border-radius: 60px;
+}
 
 .par-container {
-    position: absolute; /* This ensures the vertical text is positioned relative to this container */
-    width: 479px; /* Set the width of the container */
-    height: 500px; /* Set the height of the container */
-    left: 420px; /* Optional: adjust as needed */
-    top: 100px; /* Optional: adjust as needed */
-    background-color: #db0a0a; /* Set background color for the container */
-    border: 1px solid #000; /* Add a border to the container */
-    border-radius: 20%;
-    box-shadow:0 20px 8px rgba(45, 45, 45, 0.5);
+position: absolute; /* This ensures the vertical text is positioned relative to this container */
+width: 479px; /* Set the width of the container */
+height: 500px; /* Set the height of the container */
+left: 420px; /* Optional: adjust as needed */
+top: 100px; /* Optional: adjust as needed */
+background-color: #db0a0a; /* Set background color for the container */
+border: 1px solid #000; /* Add a border to the container */
+border-radius: 20%;
+box-shadow:0 20px 8px rgba(45, 45, 45, 0.5);
+transition: visibility 0s 0.5s, opacity 0.5s ease;
 }
 
 .par-container:hover{
-   overflow: hidden;
-   width: 0px;
-   z-index: 1px;
+opacity: 0; /* Fade out */
+visibility: hidden; /* Hide after 0.5s */
 }
 
 .vertical-text {
-    writing-mode: vertical-rl;
-    color: rgb(209, 220, 230);
-    text-align: center;
-    font-size: 18px;
-    position: absolute;
-    top: 50%; /* Center vertically, adjust as needed */
-    left: 45.5%; /* Center horizontally */
-    transform: translate(-50%, -50%) rotate(270deg); /* Center and rotate text */
-    line-height: 1.5;
+writing-mode: vertical-rl;
+color: rgb(209, 220, 230);
+text-align: center;
+font-size: 18px;
+position: absolute;
+top: 50%; /* Center vertically, adjust as needed */
+left: 45.5%; /* Center horizontally */
+transform: translate(-50%, -50%) rotate(270deg); /* Center and rotate text */
+line-height: 1.5;
 }
 
 
 .like-up, .dislike-up {
-    position: relative;
-    top: 400px;
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 18px; /* Adjust font size */
-    padding: 10px 20px;
-    background-color: #424141; /* Blue background */
-    color: #ffffff;
-    border: none;
-    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Shadow for depth */
-    cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
+position: relative;
+top: 20px;
+font-family: 'Courier New', Courier, monospace;
+font-size: 18px; /* Adjust font size */
+padding: 10px 20px;
+background-color: #424141; /* Blue background */
+color: #ffffff;
+border: none;
+box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+cursor: pointer;
+transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 
 .green-like {
-    background-color: #19972e; /* Change to a lighter green */    
+background-color: #19972e; /* Change to a lighter green */    
 }
 
 .red-dislike {
-    background-color: #da1313; /* Change to red */
+background-color: #da1313; /* Change to red */
 }
 
 .button-grid {
-    display: grid;
-    grid-template-columns: auto auto; /* Two equal columns for the buttons */
-    gap: 10px; /* Add some space between the buttons */
-    justify-content: end; /* Align the grid container to the right */
-    margin-right: 20px; /* Adjust the right margin if needed */
+display: grid;
+grid-template-columns: auto auto; /* Two equal columns for the buttons */
+gap: 10px; /* Add some space between the buttons */
+justify-content: end; /* Align the grid container to the right */
+margin-right: 20px; /* Adjust the right margin if needed */
 }
 
 .comment-grid{
-    color: rgb(255, 255, 255);
-    grid-column: 1 / span 3;
-    position: relative;
-    left: 99px;
-    text-align: center;
-    font-family: 'Rockwell', serif;
-    font-size: 18px; /* Adjust font size */
-    display: flex;
-    flex-direction: column;
-    margin: 20px auto;
-    padding: 20px;
-    background-color: rgb(233, 114, 3);
-    border-radius: 30px;
-    max-width: 600px;
-    height: 200px;
-    box-shadow: 0 20px 8px rgba(45, 45, 45, 0.5);
-    
+color: rgb(255, 255, 255);
+grid-column: 1 / span 3;
+position: relative;
+left: 99px;
+text-align: center;
+font-family: 'Rockwell', serif;
+font-size: 18px; /* Adjust font size */
+display: flex;
+flex-direction: column;
+margin: 20px auto;
+padding: 20px;
+background-color: rgb(233, 114, 3);
+border-radius: 30px;
+max-width: 600px;
+height: 200px;
+box-shadow: 0 20px 8px rgba(45, 45, 45, 0.5);
+
 }
 
 .button-icon-ippo, .button-icon-ippoo{
-    width: 20px;  /* Set the width of the image */
-    height: 20px; /* Set the height of the image */
+width: 20px;  /* Set the width of the image */
+height: 20px; /* Set the height of the image */
 }
 
 #comment-text-area {
-    position: relative;
-    right: 14.5px;
-    width: 100%;
-    height: 100px;
-    border: 1px solid #1642d1;
-    border-radius: 5px;
-    padding: 10px;
-    margin-bottom: 10px;
+position: relative;
+right: 14.5px;
+width: 100%;
+height: 100px;
+border: 1px solid #1642d1;
+border-radius: 5px;
+padding: 10px;
+margin-bottom: 10px;
 }
 
 #comment-button{
-    font-family: 'Rockwell', serif;
-    width: 100px;
-    position: relative;
-    left: 250px;
+font-family: 'Rockwell', serif;
+width: 100px;
+position: relative;
+left: 250px;
 }
 
 #feedbackButton{
-    border-radius: 15px;
-    background-color: #ec1414;
-    color: white;
+border-radius: 15px;
+background-color: #ec1414;
+color: white;
 
 
 }
 
 #feedbackButton:hover {
-    background-color: #2980b9;
-    transform: scale(1.1); /* Slightly enlarges the button */
+background-color: #2980b9;
+transform: scale(1.1); /* Slightly enlarges the button */
 
 
 }
 
 /* Main section styling */
 .feedback-button {
-    background-color: #3498db;
-    color: white;
-    font-size: 16px;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    font-family: 'Arial', sans-serif;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+background-color: #3498db;
+color: white;
+font-size: 16px;
+padding: 10px 20px;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+transition: background-color 0.3s ease;
+font-family: 'Arial', sans-serif;
+box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 
 
 .feedback-form-section {
-    margin-top: 20px;
-    padding: 20px;
-    background-color: #f9f9f9;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    font-family: 'Arial', sans-serif;
-    max-width: 600px;
-    margin: 20px auto;
+margin-top: 20px;
+padding: 20px;
+background-color: #f9f9f9;
+border-radius: 8px;
+box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+font-family: 'Arial', sans-serif;
+max-width: 600px;
+margin: 20px auto;
 }
 
 .feedback-form-section h2 {
-    font-family: 'Georgia', serif;
-    color: #e20e0e;
-    font-size: 24px;
-    margin-bottom: 20px;
-    text-align: center;
+font-family: 'Georgia', serif;
+color: #e20e0e;
+font-size: 24px;
+margin-bottom: 20px;
+text-align: center;
 }
 
 /* Label styling */
 .feedback-form-section label {
-    font-size: 16px;
-    font-weight: bold;
-    color: #555;
-    display: block;
-    margin-bottom: 8px;
-    font-family: 'Arial', sans-serif;
+font-size: 16px;
+font-weight: bold;
+color: #555;
+display: block;
+margin-bottom: 8px;
+font-family: 'Arial', sans-serif;
 }
 
 /* Input and textarea styling */
 .feedback-form-section input[type="text"],
 .feedback-form-section input[type="email"],
 .feedback-form-section textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-family: 'Arial', sans-serif;
-    font-size: 14px;
+width: 100%;
+padding: 10px;
+margin-bottom: 15px;
+border: 1px solid #ccc;
+border-radius: 5px;
+font-family: 'Arial', sans-serif;
+font-size: 14px;
 }
 
 .feedback-form-section textarea {
-    resize: vertical;
-    min-height: 100px;
+resize: vertical;
+min-height: 100px;
 }
 
 .feedback-form-section input[type="text"]:focus,
 .feedback-form-section input[type="email"]:focus,
 .feedback-form-section textarea:focus {
-    border-color: #3498db;
-    outline: none;
-    box-shadow: 0 0 5px rgba(52, 152, 219, 0.3);
+border-color: #3498db;
+outline: none;
+box-shadow: 0 0 5px rgba(52, 152, 219, 0.3);
 }
 
 /* Submit button */
 .submit-button {
-    font-family: 'Rockwell', serif;
-    background-color: #001107;
-    color: white;
-    font-size: 16px;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+font-family: 'Rockwell', serif;
+background-color: #001107;
+color: white;
+font-size: 16px;
+padding: 10px 20px;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+transition: background-color 0.3s ease;
 }
 
 .submit-button:hover {
-    background-color: #34fd0c;
+background-color: #34fd0c;
 }
 
 /* Feedback response */
 #feedbackResponse {
-    font-size: 16px;
-    color: #27ae60;
-    margin-top: 15px;
-    text-align: center;
-    font-family: 'Arial', sans-serif;
+font-size: 16px;
+color: #27ae60;
+margin-top: 15px;
+text-align: center;
+font-family: 'Arial', sans-serif;
 }
 
 .hide-button, .unhide-button{
-    position: relative;
-    top: 14px;
-    left: 600px;
-    border-radius: 15px;
-    background-color: #ec1414;
-    color: white;
+position: relative;
+top: 60px;
+left: 600px;
+border-radius: 15px;
+background-color: #ec1414;
+color: white;
 }
 
 
@@ -455,273 +400,273 @@
 
 /* Container for Image */
 .containerthorf {
-    display: flex;
-    justify-content: center; /* Center horizontally */
-    align-items: center;
-    width: 19%; /* Container width */
-    box-shadow: 0 20px 8px rgba(45, 45, 45, 0.5);
-    background-color: #840fd3; /* Background color */
-    padding: 20px; /* Adds padding inside the container */
-    margin-left: 13px; /* Adjusts the container's position */
-    border-radius: 20%; /* Rounds the corners of the container */
+display: flex;
+justify-content: center; /* Center horizontally */
+align-items: center;
+width: 19%; /* Container width */
+box-shadow: 0 20px 8px rgba(45, 45, 45, 0.5);
+background-color: #840fd3; /* Background color */
+padding: 20px; /* Adds padding inside the container */
+margin-left: 13px; /* Adjusts the container's position */
+border-radius: 20%; /* Rounds the corners of the container */
 }
 
 .thorf-title{
-    margin-left: 50px;
+margin-left: 50px;
 }
 
 .back-button-thorf:hover{
-    background-color: #0ada2d; /* Change to a lighter green */
-    transform: scale(1.1); /* Slightly enlarges the button */
+background-color: #0ada2d; /* Change to a lighter green */
+transform: scale(1.1); /* Slightly enlarges the button */
 }
 
 .back-button-thorf{
-    margin-left: 30px;
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 18px; /* Adjust font size */
-    padding: 12px 24px;
-    background-color: #d80c72; /* Green color */
-    color: #ffffff;
-    border: none;
-    border-radius: 30px;
-    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
-    cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.3s ease;
+margin-left: 30px;
+font-family: 'Courier New', Courier, monospace;
+font-size: 18px; /* Adjust font size */
+padding: 12px 24px;
+background-color: #d80c72; /* Green color */
+color: #ffffff;
+border: none;
+border-radius: 30px;
+box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+cursor: pointer;
+transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 .watch-button-thorf:hover{
-    background-color: #0ada2d; /* Change to a lighter green */
-    transform: scale(1.1); /* Slightly enlarges the button */
+background-color: #0ada2d; /* Change to a lighter green */
+transform: scale(1.1); /* Slightly enlarges the button */
 }
 
 .watch-button-thorf{
-    margin-left: 13px;
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 18px; /* Adjust font size */
-    padding: 12px 24px;
-    background-color: #d80c72; /* Green color */
-    color: #ffffff;
-    border: none;
-    border-radius: 30px;
-    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
-    cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.3s ease;
+margin-left: 13px;
+font-family: 'Courier New', Courier, monospace;
+font-size: 18px; /* Adjust font size */
+padding: 12px 24px;
+background-color: #d80c72; /* Green color */
+color: #ffffff;
+border: none;
+border-radius: 30px;
+box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+cursor: pointer;
+transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 
 
-/* img {
-    height: 400px;
-    width: 260px;
-    border-radius: 60px;
-} */
+img {
+height: 400px;
+width: 260px;
+border-radius: 60px;
+}
 
 .par-container2 {
-    position: relative; /* This ensures the vertical text is positioned relative to this container */
-    width: 479px; /* Set the width of the container */
-    height: 600px; /* Set the height of the container */
-    margin-left: 500px; /* Optional: adjust as needed */
-    margin-top: -480px; /* Optional: adjust as needed */
-    background-color: #840fd3; /* Set background color for the container */
-    border: 1px solid #000; /* Add a border to the container */
-    border-radius: 20%;
-    box-shadow:0 20px 8px rgba(45, 45, 45, 0.5);
+position: relative; /* This ensures the vertical text is positioned relative to this container */
+width: 479px; /* Set the width of the container */
+height: 600px; /* Set the height of the container */
+margin-left: 500px; /* Optional: adjust as needed */
+margin-top: -480px; /* Optional: adjust as needed */
+background-color: #840fd3; /* Set background color for the container */
+border: 1px solid #000; /* Add a border to the container */
+border-radius: 20%;
+box-shadow:0 20px 8px rgba(45, 45, 45, 0.5);
 }
 
 .vertical-text {
-    writing-mode: vertical-rl;
-    color: rgb(209, 220, 230);
-    text-align: center;
-    font-size: 18px;
-    position: absolute;
-    top: 50%; /* Center vertically, adjust as needed */
-    left: 45.5%; /* Center horizontally */
-    transform: translate(-50%, -50%) rotate(270deg); /* Center and rotate text */
-    line-height: 1.5;
+writing-mode: vertical-rl;
+color: rgb(209, 220, 230);
+text-align: center;
+font-size: 18px;
+position: absolute;
+top: 50%; /* Center vertically, adjust as needed */
+left: 45.5%; /* Center horizontally */
+transform: translate(-50%, -50%) rotate(270deg); /* Center and rotate text */
+line-height: 1.5;
 }
 
 .like-up2, .dislike-up2 {
-    position: relative;
-    top: -300px;
-    right: 70px;
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 18px; /* Adjust font size */
-    padding: 10px 20px;
-    background-color: #424141; /* Blue background */
-    color: #ffffff;
-    border: none;
-    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Shadow for depth */
-    cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
+position: relative;
+top: -300px;
+right: 70px;
+font-family: 'Courier New', Courier, monospace;
+font-size: 18px; /* Adjust font size */
+padding: 10px 20px;
+background-color: #424141; /* Blue background */
+color: #ffffff;
+border: none;
+box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+cursor: pointer;
+transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 
 .button-icon-ippo, .button-icon-ippoo{
-    width: 20px;  /* Set the width of the image */
-    height: 20px; /* Set the height of the image */
+width: 20px;  /* Set the width of the image */
+height: 20px; /* Set the height of the image */
 }
 
 .green-like2 {
-    background-color: #19972e; /* Change to a lighter green */    
+background-color: #19972e; /* Change to a lighter green */    
 }
 
 .red-dislike2 {
-    background-color: #da1313; /* Change to red */
+background-color: #da1313; /* Change to red */
 }
 
 .button-grid2 {
-    display: grid;
-    grid-template-columns: auto auto; /* Two equal columns for the buttons */
-    gap: 10px; /* Add some space between the buttons */
-    justify-content: end; /* Align the grid container to the right */
-    margin-right: 20px; /* Adjust the right margin if needed */
+display: grid;
+grid-template-columns: auto auto; /* Two equal columns for the buttons */
+gap: 10px; /* Add some space between the buttons */
+justify-content: end; /* Align the grid container to the right */
+margin-right: 20px; /* Adjust the right margin if needed */
 }
 
 .comment-grid2{
-    color: rgb(255, 255, 255);
-    grid-column: 1 / span 3;
-    text-align: center;
-    font-family: 'Rockwell', serif;
-    font-size: 18px; /* Adjust font size */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 20px auto;
-    padding: 20px;
-    background-color: rgb(158, 38, 214);
-    border-radius: 10px;
-    max-width: 600px;
-    height: 200px;
-    
+color: rgb(255, 255, 255);
+grid-column: 1 / span 3;
+text-align: center;
+font-family: 'Rockwell', serif;
+font-size: 18px; /* Adjust font size */
+display: flex;
+flex-direction: column;
+align-items: center;
+margin: 20px auto;
+padding: 20px;
+background-color: rgb(158, 38, 214);
+border-radius: 10px;
+max-width: 600px;
+height: 200px;
+
 }
 
 #comment-text-area2 {
-    width: 100%;
-    height: 100px;
-    border: 1px solid #1642d1;
-    border-radius: 5px;
-    padding: 10px;
-    margin-bottom: 10px;
+width: 100%;
+height: 100px;
+border: 1px solid #1642d1;
+border-radius: 5px;
+padding: 10px;
+margin-bottom: 10px;
 }
 
 #comment-button2{
-    font-family: 'Rockwell', serif;
+font-family: 'Rockwell', serif;
 }
 
 /* Feedback Button */
 /* Feedback Button Styling */
 #feedbackButton2 {
-    border-radius: 25px;
-    background-color: #ff4757; /* Bright red */
-    color: white;
-    padding: 10px 20px;
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+border-radius: 25px;
+background-color: #ff4757; /* Bright red */
+color: white;
+padding: 10px 20px;
+font-size: 16px;
+border: none;
+cursor: pointer;
+transition: background-color 0.3s ease, transform 0.3s ease;
+box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
 #feedbackButton2:hover {
-    background-color: #ff6b81; /* Lighter red */
-    transform: scale(1.05); /* Slightly enlarges the button */
+background-color: #ff6b81; /* Lighter red */
+transform: scale(1.05); /* Slightly enlarges the button */
 }
 
 /* Main Section Styling */
 .feedback-form-section2 {
-    margin-top: 30px;
-    padding: 30px;
-    background-color: #ffffff; /* White background for contrast */
-    border-radius: 10px;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-    font-family: 'Arial', sans-serif;
-    max-width: 500px; /* Adjusted for a cleaner look */
-    margin: 20px auto;
+margin-top: 30px;
+padding: 30px;
+background-color: #ffffff; /* White background for contrast */
+border-radius: 10px;
+box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+font-family: 'Arial', sans-serif;
+max-width: 500px; /* Adjusted for a cleaner look */
+margin: 20px auto;
 }
 
 /* Header Styling */
 .feedback-form-section h2 {
-    font-family: 'Georgia', serif;
-    color: #333; /* Darker text for contrast */
-    font-size: 26px;
-    margin-bottom: 20px;
-    text-align: center;
+font-family: 'Georgia', serif;
+color: #333; /* Darker text for contrast */
+font-size: 26px;
+margin-bottom: 20px;
+text-align: center;
 }
 
 /* Label Styling */
 .feedback-form-section2 label {
-    font-size: 16px;
-    font-weight: bold;
-    color: #555;
-    display: block;
-    margin-bottom: 8px;
+font-size: 16px;
+font-weight: bold;
+color: #555;
+display: block;
+margin-bottom: 8px;
 }
 
 /* Input and Textarea Styling */
 .feedback-form-section2 input[type="text2"],
 .feedback-form-section2 input[type="email2"],
 .feedback-form-section2 textarea {
-    width: 100%;
-    padding: 15px; /* Increased padding for a modern look */
-    margin-bottom: 15px;
-    border: 1px solid #ddd; /* Light grey border */
-    border-radius: 5px;
-    font-family: 'Arial', sans-serif;
-    font-size: 14px;
-    transition: border-color 0.3s ease;
+width: 100%;
+padding: 15px; /* Increased padding for a modern look */
+margin-bottom: 15px;
+border: 1px solid #ddd; /* Light grey border */
+border-radius: 5px;
+font-family: 'Arial', sans-serif;
+font-size: 14px;
+transition: border-color 0.3s ease;
 }
 
 .feedback-form-section2 textarea {
-    resize: vertical;
-    min-height: 100px;
+resize: vertical;
+min-height: 100px;
 }
 
 .feedback-form-section2 input[type="text2"]:focus,
 .feedback-form-section2 input[type="email2"]:focus,
 .feedback-form-section2 textarea:focus {
-    border-color: #3498db; /* Blue border on focus */
-    outline: none;
-    box-shadow: 0 0 5px rgba(52, 152, 219, 0.3);
+border-color: #3498db; /* Blue border on focus */
+outline: none;
+box-shadow: 0 0 5px rgba(52, 152, 219, 0.3);
 }
 
 /* Submit Button Styling */
 .submit-button2 {
-    font-family: 'Rockwell', serif;
-    background-color: #007bff; /* Bootstrap blue */
-    color: white;
-    font-size: 16px;
-    padding: 12px 20px; /* Adjusted padding */
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-    width: 100%; /* Full width button */
+font-family: 'Rockwell', serif;
+background-color: #007bff; /* Bootstrap blue */
+color: white;
+font-size: 16px;
+padding: 12px 20px; /* Adjusted padding */
+border: none;
+border-radius: 5px;
+cursor: pointer;
+transition: background-color 0.3s ease, transform 0.3s ease;
+width: 100%; /* Full width button */
 }
 
 .submit-button2:hover {
-    background-color: #0056b3; /* Darker blue on hover */
-    transform: translateY(-2px); /* Lift effect on hover */
+background-color: #0056b3; /* Darker blue on hover */
+transform: translateY(-2px); /* Lift effect on hover */
 }
 
 /* Feedback Response */
 #feedbackResponse2 {
-    font-size: 16px;
-    color: #27ae60; /* Success green */
-    margin-top: 15px;
-    text-align: center;
+font-size: 16px;
+color: #27ae60; /* Success green */
+margin-top: 15px;
+text-align: center;
 }
 
 /* Button to Hide/Unhide Feedback */
 .hide-button2, .unhide-button2 {
-    position: relative;
-    top: 20px;
-    left: 90px;
-    border-radius: 25px;
-    background-color: #ff4757; /* Consistent with main feedback button */
-    color: white;
-    padding: 10px 15px; /* Slightly smaller padding */
-    cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.3s ease;
+position: relative;
+top: 20px;
+left: 90px;
+border-radius: 25px;
+background-color: #ff4757; /* Consistent with main feedback button */
+color: white;
+padding: 10px 15px; /* Slightly smaller padding */
+cursor: pointer;
+transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 
@@ -732,288 +677,288 @@
 
 /* Container for Image */
 .containerguts {
-    display: flex;
-    justify-content: center; /* Center horizontally */
-    align-items: center;
-    width: 19%; /* Container width */
-    box-shadow: 0 30px 8px rgba(0, 0, 0, 0.5);
-    background-color: #05848d; /* Background color */
-    padding: 20px; /* Adds padding inside the container */
-    margin-left: 13px; /* Adjusts the container's position */
-    border-radius: 20%; /* Rounds the corners of the container */
+display: flex;
+justify-content: center; /* Center horizontally */
+align-items: center;
+width: 19%; /* Container width */
+box-shadow: 0 30px 8px rgba(0, 0, 0, 0.5);
+background-color: #05848d; /* Background color */
+padding: 20px; /* Adds padding inside the container */
+margin-left: 13px; /* Adjusts the container's position */
+border-radius: 20%; /* Rounds the corners of the container */
 }
 
 .guts-title{
-    margin-left: 100px;
+margin-left: 100px;
 }
 
 .back-button-guts:hover{
-    background-color: #0ada2d; /* Change to a lighter green */
-    transform: scale(1.1); /* Slightly enlarges the button */
+background-color: #0ada2d; /* Change to a lighter green */
+transform: scale(1.1); /* Slightly enlarges the button */
 }
 
 .back-button-guts{
-    margin-left: 30px;
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 18px; /* Adjust font size */
-    padding: 12px 24px;
-    background-color: silver; /* Green color */
-    color: #000000;
-    border: none;
-    border-radius: 30px;
-    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
-    cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.3s ease;
+margin-left: 30px;
+font-family: 'Courier New', Courier, monospace;
+font-size: 18px; /* Adjust font size */
+padding: 12px 24px;
+background-color: silver; /* Green color */
+color: #000000;
+border: none;
+border-radius: 30px;
+box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+cursor: pointer;
+transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 
 .watch-button-guts:hover{
-    background-color: #0ada2d; /* Change to a lighter green */
-    transform: scale(1.1); /* Slightly enlarges the button */
+background-color: #0ada2d; /* Change to a lighter green */
+transform: scale(1.1); /* Slightly enlarges the button */
 }
 
 .watch-button-guts{
-    margin-left: 13px;
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 18px; /* Adjust font size */
-    padding: 12px 24px;
-    background-color: silver; /* Green color */
-    color: #000000;
-    border: none;
-    border-radius: 30px;
-    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
-    cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.3s ease;
+margin-left: 13px;
+font-family: 'Courier New', Courier, monospace;
+font-size: 18px; /* Adjust font size */
+padding: 12px 24px;
+background-color: silver; /* Green color */
+color: #000000;
+border: none;
+border-radius: 30px;
+box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+cursor: pointer;
+transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 
 
-/* img {
-    height: 400px;
-    width: 260px;
-    border-radius: 60px;
-} */
+img {
+height: 400px;
+width: 260px;
+border-radius: 60px;
+}
 
 .par-container3 {
-    position: relative; /* This ensures the vertical text is positioned relative to this container */
-    width: 479px; /* Set the width of the container */
-    height: 600px; /* Set the height of the container */
-    margin-left: 500px; /* Optional: adjust as needed */
-    margin-top: -480px; /* Optional: adjust as needed */
-    background-color: #2b021b; /* Set background color for the container */
-    border-radius: 20%;
-    box-shadow:0 20px 8px rgba(45, 45, 45, 0.5);
+position: relative; /* This ensures the vertical text is positioned relative to this container */
+width: 479px; /* Set the width of the container */
+height: 600px; /* Set the height of the container */
+margin-left: 500px; /* Optional: adjust as needed */
+margin-top: -480px; /* Optional: adjust as needed */
+background-color: #2b021b; /* Set background color for the container */
+border-radius: 20%;
+box-shadow:0 20px 8px rgba(45, 45, 45, 0.5);
 }
 
 .vertical-text {
-    writing-mode: vertical-rl;
-    color: rgb(209, 220, 230);
-    text-align: center;
-    font-size: 18px;
-    position: absolute;
-    top: 50%; /* Center vertically, adjust as needed */
-    left: 45.5%; /* Center horizontally */
-    transform: translate(-50%, -50%) rotate(270deg); /* Center and rotate text */
-    line-height: 1.5;
+writing-mode: vertical-rl;
+color: rgb(209, 220, 230);
+text-align: center;
+font-size: 18px;
+position: absolute;
+top: 50%; /* Center vertically, adjust as needed */
+left: 45.5%; /* Center horizontally */
+transform: translate(-50%, -50%) rotate(270deg); /* Center and rotate text */
+line-height: 1.5;
 }
 
 
 
 .like-up3, .dislike-up3 {
-    position: relative;
-    top: -300px;
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 18px; /* Adjust font size */
-    padding: 10px 20px;
-    background-color: #424141; /* Blue background */
-    color: #ffffff;
-    border: none;
-    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Shadow for depth */
-    cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
+position: relative;
+top: -300px;
+font-family: 'Courier New', Courier, monospace;
+font-size: 18px; /* Adjust font size */
+padding: 10px 20px;
+background-color: #424141; /* Blue background */
+color: #ffffff;
+border: none;
+box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+cursor: pointer;
+transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 
 .button-icon-guts, .button-icon-gutss{
-    width: 20px;  /* Set the width of the image */
-    height: 20px; /* Set the height of the image */
+width: 20px;  /* Set the width of the image */
+height: 20px; /* Set the height of the image */
 }
 
 
 
 
 .green-like3 {
-    background-color: #19972e; /* Change to a lighter green */    
+background-color: #19972e; /* Change to a lighter green */    
 }
 
 .red-dislike3 {
-    background-color: #da1313; /* Change to red */
+background-color: #da1313; /* Change to red */
 }
 
 .button-grid3 {
-    display: grid;
-    grid-template-columns: auto auto; /* Two equal columns for the buttons */
-    gap: 10px; /* Add some space between the buttons */
-    justify-content: end; /* Align the grid container to the right */
-    margin-right: 20px; /* Adjust the right margin if needed */
+display: grid;
+grid-template-columns: auto auto; /* Two equal columns for the buttons */
+gap: 10px; /* Add some space between the buttons */
+justify-content: end; /* Align the grid container to the right */
+margin-right: 20px; /* Adjust the right margin if needed */
 }
 
 .comment-grid3{
-    color: rgb(0, 0, 0);
-    grid-column: 1 / span 3;
-    text-align: center;
-    font-family: 'Rockwell', serif;
-    font-size: 18px; /* Adjust font size */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 20px auto;
-    padding: 20px;
-    background-color: silver;
-    border-radius: 10px;
-    max-width: 600px;
-    height: 200px;
-    
+color: rgb(0, 0, 0);
+grid-column: 1 / span 3;
+text-align: center;
+font-family: 'Rockwell', serif;
+font-size: 18px; /* Adjust font size */
+display: flex;
+flex-direction: column;
+align-items: center;
+margin: 20px auto;
+padding: 20px;
+background-color: silver;
+border-radius: 10px;
+max-width: 600px;
+height: 200px;
+
 }
 
 #comment-text-area3 {
-    width: 100%;
-    height: 100px;
-    border: 1px solid #1642d1;
-    border-radius: 5px;
-    padding: 10px;
-    margin-bottom: 10px;
+width: 100%;
+height: 100px;
+border: 1px solid #1642d1;
+border-radius: 5px;
+padding: 10px;
+margin-bottom: 10px;
 }
 
 #comment-button3{
-    font-family: 'Rockwell', serif;
+font-family: 'Rockwell', serif;
 }
 
 #feedbackButton3{
-    border-radius: 15px;
-    background-color: silver;
-    color: rgb(46, 4, 70);
+border-radius: 15px;
+background-color: silver;
+color: rgb(46, 4, 70);
 
 
 }
 
 #feedbackButton3:hover {
-    background-color: #2980b9;
-    transform: scale(1.1); /* Slightly enlarges the button */
+background-color: #2980b9;
+transform: scale(1.1); /* Slightly enlarges the button */
 
 
 }
 
 /* Main section styling */
 .feedback-button3 {
-    background-color: #3498db;
-    color: white;
-    font-size: 16px;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    font-family: 'Arial', sans-serif;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+background-color: #3498db;
+color: white;
+font-size: 16px;
+padding: 10px 20px;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+transition: background-color 0.3s ease;
+font-family: 'Arial', sans-serif;
+box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 
 
 .feedback-form-section3 {
-    margin-top: 20px;
-    padding: 20px;
-    background-color: #f9f9f9;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    font-family: 'Arial', sans-serif;
-    max-width: 600px;
-    margin: 20px auto;
+margin-top: 20px;
+padding: 20px;
+background-color: #f9f9f9;
+border-radius: 8px;
+box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+font-family: 'Arial', sans-serif;
+max-width: 600px;
+margin: 20px auto;
 }
 
 .feedback-form-section3 h2 {
-    font-family: 'Georgia', serif;
-    color: #525050;
-    font-size: 24px;
-    margin-bottom: 20px;
-    text-align: center;
+font-family: 'Georgia', serif;
+color: #525050;
+font-size: 24px;
+margin-bottom: 20px;
+text-align: center;
 }
 
 /* Label styling */
 .feedback-form-section3 label {
-    font-size: 16px;
-    font-weight: bold;
-    color: #555;
-    display: block;
-    margin-bottom: 8px;
-    font-family: 'Arial', sans-serif;
+font-size: 16px;
+font-weight: bold;
+color: #555;
+display: block;
+margin-bottom: 8px;
+font-family: 'Arial', sans-serif;
 }
 
 /* Input and textarea styling */
 .feedback-form-section3 input[type="text3"],
 .feedback-form-section3 input[type="email3"],
 .feedback-form-section3 textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-family: 'Arial', sans-serif;
-    font-size: 14px;
+width: 100%;
+padding: 10px;
+margin-bottom: 15px;
+border: 1px solid #ccc;
+border-radius: 5px;
+font-family: 'Arial', sans-serif;
+font-size: 14px;
 }
 
 .feedback-form-section3 textarea {
-    resize: vertical;
-    min-height: 100px;
+resize: vertical;
+min-height: 100px;
 }
 
 .feedback-form-section3 input[type="text3"]:focus,
 .feedback-form-section3 input[type="email3"]:focus,
 .feedback-form-section3 textarea:focus {
-    border-color: #3498db;
-    outline: none;
-    box-shadow: 0 0 5px rgba(52, 152, 219, 0.3);
+border-color: #3498db;
+outline: none;
+box-shadow: 0 0 5px rgba(52, 152, 219, 0.3);
 }
 
 /* Submit button */
 .submit-button3 {
-    font-family: 'Rockwell', serif;
-    background-color: #001107;
-    color: white;
-    font-size: 16px;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+font-family: 'Rockwell', serif;
+background-color: #001107;
+color: white;
+font-size: 16px;
+padding: 10px 20px;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+transition: background-color 0.3s ease;
 }
 
 .submit-button3:hover {
-    background-color: #34fd0c;
+background-color: #34fd0c;
 }
 
 /* Feedback response */
 #feedbackResponse3 {
-    font-size: 16px;
-    color: #27ae60;
-    margin-top: 15px;
-    text-align: center;
-    font-family: 'Arial', sans-serif;
+font-size: 16px;
+color: #27ae60;
+margin-top: 15px;
+text-align: center;
+font-family: 'Arial', sans-serif;
 }
 
 .hide-button3, .unhide-button3{
-    position: relative;
-    top: 14px;
-    left: 90px;
-    border-radius: 15px;
-    background-color: #ec1414;
-    color: white;
-    border-radius: 25px;
-    background-color: #38bffd; /* Consistent with main feedback button */
-    color: rgb(0, 0, 0);
-    padding: 10px 15px; /* Slightly smaller padding */
-    cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.3s ease;
+position: relative;
+top: 14px;
+left: 90px;
+border-radius: 15px;
+background-color: #ec1414;
+color: white;
+border-radius: 25px;
+background-color: #38bffd; /* Consistent with main feedback button */
+color: rgb(0, 0, 0);
+padding: 10px 15px; /* Slightly smaller padding */
+cursor: pointer;
+transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 
