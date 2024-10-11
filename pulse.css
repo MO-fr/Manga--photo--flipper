@@ -201,7 +201,8 @@ line-height: 1.5;
 
 .like-up, .dislike-up {
 position: relative;
-top: 20px;
+bottom: 400px;
+right: 200px;
 font-family: 'Courier New', Courier, monospace;
 font-size: 18px; /* Adjust font size */
 padding: 10px 20px;
@@ -405,7 +406,7 @@ justify-content: center; /* Center horizontally */
 align-items: center;
 width: 19%; /* Container width */
 box-shadow: 0 20px 8px rgba(45, 45, 45, 0.5);
-background-color: #840fd3; /* Background color */
+background: #840fd3; /* Background color */
 padding: 20px; /* Adds padding inside the container */
 margin-left: 13px; /* Adjusts the container's position */
 border-radius: 20%; /* Rounds the corners of the container */
@@ -502,8 +503,8 @@ transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s eas
 
 
 .button-icon-ippo, .button-icon-ippoo{
-width: 20px;  /* Set the width of the image */
-height: 20px; /* Set the height of the image */
+    width: 20px;  /* Set the width of the image */
+    height: 20px; /* Set the height of the image */
 }
 
 .green-like2 {
