@@ -61,18 +61,20 @@ document.getElementById("comment-button").addEventListener("click", () => {
 });
 
 
-// Function to unhide the image
-function unhideMangacover(playerId) {
-    document.getElementById(playerId).style.display = 'block'; // Unhide the image container
-}
+
 // Function to hide the image
  function hideMangacover(playerId) {
         document.getElementById(playerId).style.display = 'none'; // Hide the image container
     }
+// Function to unhide the image
+function unhideMangacover(playerId) {
+    document.getElementById(playerId).style.display = 'block'; // Unhide the image container
+}
+
 
 }
 
- if (window.location.href === "http://127.0.0.1:5500/thorf.html"){
+ else if (window.location.href === "http://127.0.0.1:5500/thorf.html"){
 ///////////////////////////////////Javascript for Thorf////////////////////////////////////////////////////////
 
 const likeButton2 = document.getElementById("like-button2");
@@ -104,11 +106,11 @@ document.getElementById('feedbackButton2').addEventListener('click', function() 
     document.getElementById('feedbackForm2').reset();
   });
 
-  function unhideMangacover(playerId) {
+  function unhideMangacover2(playerId) {
     document.getElementById(playerId).style.display = 'block'; // Unhide the image container
 }
 // Function to hide the image
- function hideMangacover(playerId) {
+ function hideMangacover2(playerId) {
         document.getElementById(playerId).style.display = 'none'; // Hide the image container
     }
   
@@ -186,11 +188,11 @@ document.getElementById("comment-button3").addEventListener("click", () => {
   
 });
 
-function unhideMangacover(playerId) {
+function unhideMangacover3(playerId) {
     document.getElementById(playerId).style.display = 'block'; // Unhide the image container
 }
 // Function to hide the image
- function hideMangacover(playerId) {
+ function hideMangacover3(playerId) {
         document.getElementById(playerId).style.display = 'none'; // Hide the image container
     }
   
