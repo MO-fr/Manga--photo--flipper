@@ -180,13 +180,8 @@ background-color: #db0a0a; /* Set background color for the container */
 border: 1px solid #000; /* Add a border to the container */
 border-radius: 20%;
 box-shadow:0 20px 8px rgba(45, 45, 45, 0.5);
-transition: visibility 0s 0.5s, opacity 0.5s ease;
 }
 
-.par-container:hover{
-opacity: 0; /* Fade out */
-visibility: hidden; /* Hide after 0.5s */
-}
 
 .vertical-text {
 writing-mode: vertical-rl;
