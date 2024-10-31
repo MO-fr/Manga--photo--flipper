@@ -602,6 +602,16 @@ display: block;
 margin-bottom: 8px;
 }
 
+#feedbackName2, #feedbackEmail2, #feedbackName3, #feedbackEmail3{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: 'Arial', sans-serif;
+    font-size: 14px;
+}
+
 /* Input and Textarea Styling */
 .feedback-form-section2 input[type="text2"],
 .feedback-form-section2 input[type="email2"],
