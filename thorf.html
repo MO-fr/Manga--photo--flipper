@@ -26,17 +26,17 @@
         <img src="https://i.pinimg.com/564x/61/db/80/61db8026dd40b37de096a60c6afb80e9.jpg" alt="Image 1">
     </div>
     
-    <button class="hide-button2" onclick="hideElements('thorf-id')">Hide</button>
-    <button class="unhide-button2" onclick="unhideMangacover('thorf-id')">Unhide</button>
+    <button class="hide-button2" onclick="hideElements(['thorf-id', 'par-container2'])">Hide</button>
+    <button class="unhide-button2" onclick="toggleElementsVisibility(['thorf-id', 'par-container2'], true)">Unhide</button>
 
-    <div class="par-container2">
+    <div class="par-container2" id="par-container2">
         <p class="vertical-text" style="font-family: 'Impact', sans-serif;">
-           This manga is quite a roller coaster to say the least. I loved experinceing Thorfins tragic story and seeing him rise despite the misfortune his life brought, 
-           he genuinely felt like a real person and his enteractions with rival Askaland made added 
+           This manga is quite a roller coaster to say the least. I loved experiencing Thorfins tragic story and seeing him rise despite the misfortune his life brought, 
+           he genuinely felt like a real person and his interaction with rival Askaland made added 
            great intensity, so much to the point that it made the ending of the fist arc all the more better. 
            This story did a great job at showing the difficulties of becoming a better person and as people we resonate with that  
            Both the anime and manga are fantastic ways in viewing this masterclass story and the clip provided 
-           shows why these charcters and their motivations are so enjoyable to watch and root for! 
+           shows why these characters and their motivations are so enjoyable to watch and root for! 
         
         </p>
     </div>
@@ -66,7 +66,6 @@
         </button>
    </section>
 
-    <!-- Button to hide the player card -->
     
     <section class="comment-grid2">Comment Section
         <textarea id="comment-text-area2" placeholder="Leave any comments here"></textarea>

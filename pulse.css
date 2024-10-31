@@ -17,7 +17,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 75%; /* Adjusted to fit in the grid layout */
+    width: 71%; /* Adjusted to fit in the grid layout */
     box-shadow: 0 20px 8px rgba(45, 45, 45, 0.5);
     background-color: #da1313;
     padding: 20px;
@@ -35,7 +35,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 75%; /* Adjusted to fit in the grid layout */
+    width: 71%; /* Adjusted to fit in the grid layout */
     background-color: #b3be47de;
     padding: 20px;
     border-radius: 20%;
@@ -53,7 +53,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 75%; /* Adjusted to fit in the grid layout */
+    width: 71%; /* Adjusted to fit in the grid layout */
     background-color: #000000;
     padding: 20px;
     box-shadow: 0 30px 8px rgba(0, 0, 0, 0.5);
@@ -419,6 +419,8 @@ transform: scale(1.1); /* Slightly enlarges the button */
 }
 
 .back-button-thorf{
+position: relative;
+top: 17px;
 margin-left: 30px;
 font-family: 'Courier New', Courier, monospace;
 font-size: 18px; /* Adjust font size */
@@ -657,7 +659,7 @@ text-align: center;
 /* Button to Hide/Unhide Feedback */
 .hide-button2, .unhide-button2 {
 position: relative;
-top: 20px;
+top: 39px;
 left: 90px;
 border-radius: 25px;
 background-color: #ff4757; /* Consistent with main feedback button */
@@ -688,6 +690,8 @@ border-radius: 20%; /* Rounds the corners of the container */
 
 .guts-title{
 margin-left: 100px;
+position: relative;
+bottom: 18px;
 }
 
 .back-button-guts:hover{
