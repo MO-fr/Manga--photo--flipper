@@ -1,34 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Defines the character encoding and tells the browser how to display text properly -->
     <meta charset="UTF-8">
+    <!-- Makes the webpage responsive so it fits on different screen sizes like phones or computers -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Sets the title of the webpage that appears on the browser tab -->
     <title>Vinland Saga</title>
+    <!-- Links an external CSS file named 'pulse.css' to style this page -->
     <link rel="stylesheet" href="pulse.css">
-    
 </head>
-<body style="background: linear-gradient(to left, #840fd3, rgb(206, 11, 53)) /* Background color */">
 
+<!-- Sets a background color gradient from purple to red for the entire page -->
+<body style="background: linear-gradient(to left, #840fd3, rgb(206, 11, 53))">
+
+    <!-- Link to a video on YouTube with a button that says "Watch Video" -->
     <a href="https://youtu.be/0ddJmJ5WLCI?si=Kd9a7Iv9Y4YIcfH5&t=239" target="_blank">
      <button class="watch-button-thorf">
         Watch Video
      </button>
     </a>
-    <!-- Page heading -->
-        <div class ="thorf-title"> 
-            <h1 style="font-family: 'Rockwell', serif;">Vinland Saga</h1>
-        </div>
 
-    <!-- Image -->
-    
+    <!-- Page heading: Title "Vinland Saga" displayed at the top of the page in a special font -->
+    <div class ="thorf-title"> 
+        <h1 style="font-family: 'Rockwell', serif;">Vinland Saga</h1>
+    </div>
 
+    <!-- Container for an image related to Vinland Saga with a unique styling and ID for later reference -->
     <div class="containerthorf" id="thorf-id">
         <img src="https://i.pinimg.com/564x/61/db/80/61db8026dd40b37de096a60c6afb80e9.jpg" alt="Image 1">
     </div>
     
+    <!-- Two buttons to hide and show elements on the page like the image and text paragraph -->
     <button class="hide-button2" onclick="hideElements(['thorf-id', 'par-container2'])">Hide</button>
     <button class="unhide-button2" onclick="toggleElementsVisibility(['thorf-id', 'par-container2'], true)">Unhide</button>
 
+    <!-- Paragraph container that holds a description of Vinland Saga -->
     <div class="par-container2" id="par-container2">
         <p class="vertical-text" style="font-family: 'Impact', sans-serif;">
            This manga is quite a roller coaster to say the least. I loved experiencing Thorfins tragic story and seeing him rise despite the misfortune his life brought, 
@@ -37,62 +44,67 @@
            This story did a great job at showing the difficulties of becoming a better person and as people we resonate with that  
            Both the anime and manga are fantastic ways in viewing this masterclass story and the clip provided 
            shows why these characters and their motivations are so enjoyable to watch and root for! 
-        
         </p>
     </div>
 
+    <!-- Button that links back to the homepage -->
     <div style="margin-top: -80px;">
         <a href="index.html">
-            <button class ="back-button-thorf">
+            <button class="back-button-thorf">
                 Go back to home
             </button>
         </a>
     </div>
 
-
-
+    <!-- Links an external JavaScript file named 'pulse.js' to add interactivity to the page -->
     <script defer src="pulse.js"></script>
 
-    <!-- Like button & dislike button  -->
+    <!-- Like and dislike button section -->
     <section class="button-grid2">
+        <!-- Like button with an icon to show thumbs up -->
         <button class="like-up2" id="like-button2">
             <img src="https://cdn-icons-png.freepik.com/512/6619/6619136.png?fd=1&filename=thumbs-up_6619136.png" 
             alt="Like" class="button-icon-ippo">
         </button>
 
+        <!-- Dislike button with an icon to show thumbs down -->
         <button class="dislike-up2" id="dislike-button2">
             <img src="https://cdn-icons-png.freepik.com/512/3329/3329332.png?fd=1&filename=dislike_3329332.png" 
             alt="Dislike" class="button-icon-ippoo">
         </button>
-   </section>
+    </section>
 
-    
+    <!-- Comment section where users can type and submit comments -->
     <section class="comment-grid2">Comment Section
+        <!-- Text area for entering comments -->
         <textarea id="comment-text-area2" placeholder="Leave any comments here"></textarea>
+        <!-- Button to submit the comment -->
         <button id="comment-button2">Enter</button>
     </section>
 
+    <!-- Feedback form section that opens when the "Give Feedback" button is clicked -->
     <section>
         <button id="feedbackButton2">Give Feedback</button>
         <div id="feedbackFormSection2" class="feedback-form-section2" style="display: none;">
-            <h2>Feedback Form</h2>
+            <h2>Feedback Form + Feature Request form</h2>
+            <!-- Form that collects feedback, name, and email from the user -->
             <form id="feedbackForm2">
-                <label for="feedback2">Your Feedback:</label>
+                <label for="feedback2">Your Feedback + :</label>
                 <textarea id="feedback2" rows="4" required></textarea>
                 
                 <label for="feedbackName2">Your Name:</label>
-                <input type="text2" id="feedbackName2">
+                <input type="text" id="feedbackName2">
                 
                 <label for="feedbackEmail2">Your Email:</label>
-                <input type="email2" id="feedbackEmail2">
+                <input type="email" id="feedbackEmail2">
         
+                <!-- Submit button for the feedback form -->
                 <button class="submit-button2">Submit Feedback</button>
             </form>
+            <!-- Placeholder for a response message after feedback is submitted -->
             <p id="feedbackResponse2"></p>
         </div>
     </section>
-
-        
 
 </body>
 </html>

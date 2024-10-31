@@ -1,46 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Sets the character encoding and makes sure all characters display correctly -->
     <meta charset="UTF-8">
+    <!-- Makes the webpage fit nicely on all devices, like phones and tablets -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title of the webpage that appears on the browser tab -->
     <title>Hajime No Ippo</title>
+    <!-- Links an external CSS file called "pulse.css" to style the page -->
     <link rel="stylesheet" href="pulse.css">
+    <!-- Links an external JavaScript file called "pulse.js" to add interactivity to the page -->
     <script defer src="pulse.js"></script>
 </head>
+
+<!-- Background color of the page set to a dark purple color -->
 <body style="background-color:rgb(88, 37, 122);">
 
+    <!-- Link to a video on YouTube with a button to watch it; opens in a new tab -->
     <a href="https://youtu.be/E40KiYBJAHM?si=gYWz-vp544rui7Mm" target="_blank">
      <button class="watch-button-guts">
         Watch Video
      </button>
     </a>
-    <!-- Page heading -->
+
+    <!-- Page heading: displays "Berserk" as the main title with a unique font style -->
      <div class="guts-title">
         <h1 style="font-family: 'Rockwell', serif;">Berserk</h1>
     </div>
-    <!-- Image -->
+
+    <!-- Container for the Berserk image with a unique ID for easy reference -->
     <div class="containerguts" id="guts-id">
         <img src="https://i.pinimg.com/564x/34/14/02/3414021875b60371daf93b6c29acbd01.jpg" alt="Image 1">
     </div>
 
+    <!-- Buttons to hide and show elements (image and paragraph) on the page -->
     <button class="hide-button3" onclick="hideElements(['guts-id', 'par-container3'])">Hide</button>
     <button class="unhide-button3" onclick="toggleElementsVisibility(['guts-id', 'par-container3'], true)">Unhide</button>
 
-
+    <!-- Paragraph container with some text describing Berserk and its anime adaptation -->
     <div class="par-container3" id="par-container3">
         <p class="vertical-text" style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif">
-           I think we all know what Berserk is, I don't think i have to harp on how good it is.
-           One of the highest regarded manga of all time and adored my millions, the story, the characters, and ART!! all just perfect....
-           BUT we have one issue, unlike the other 2 manga/anime, Berserk is a little different, there really isn't a GOOD definitive anime for Berserk. There is ONE however, 
-           that's widly known... for the completly WRONG reasons. &#128128;
-           The first anime adaptation since the 90's version, and that's the attrocity that is known as BERSERK 2016!
-           Man that anime is terrible, there's a reason why berserk has not had a good anime since the 90's... look for your self LMAO
-           
-        
+           I think we all know what Berserk is, I don't think I have to harp on how good it is.
+           One of the highest-regarded manga of all time and adored by millions, the story, the characters, and ART!! all just perfect....
+           BUT we have one issue: unlike the other two manga/anime, Berserk is a little different because there really isn't a GOOD definitive anime for Berserk. 
+           There is ONE however, that's widely known... for the completely WRONG reasons. &#128128;
+           The first anime adaptation since the 90's version, and that's the atrocity that is known as BERSERK 2016!
+           Man, that anime is terrible; there's a reason why Berserk has not had a good anime since the 90's... look for yourself LMAO
         </p>
     </div>
 
-    <div style="margin-top: -80px; text-align: center;"></div>
+    <!-- Button that links back to the homepage -->
+    <div style="margin-top: -80px; text-align: center;">
         <a href="index.html">
             <button class="back-button-guts">
                 Go back to home
@@ -48,41 +58,50 @@
         </a>
     </div>
 
-
-    <!-- Like button & dislike button  -->
+    <!-- Section for Like and Dislike buttons with icons -->
     <section class="button-grid2">
+        <!-- Like button with thumbs-up icon -->
         <button class="like-up3" id="like-button3">
             <img src="https://cdn-icons-png.freepik.com/512/6619/6619136.png?fd=1&filename=thumbs-up_6619136.png" 
             alt="Like" class="button-icon-guts">
         </button>
 
+        <!-- Dislike button with thumbs-down icon -->
         <button class="dislike-up3" id="dislike-button3">
             <img src="https://cdn-icons-png.freepik.com/512/3329/3329332.png?fd=1&filename=dislike_3329332.png" 
             alt="Dislike" class="button-icon-gutss">
         </button>
    </section>
 
+    <!-- Comment section where users can leave feedback -->
     <section class="comment-grid3">Comment Section
+        <!-- Text area for typing comments -->
         <textarea id="comment-text-area3" placeholder="Leave any comments here"></textarea>
+        <!-- Button to submit the comment -->
         <button id="comment-button3">Enter</button>
     </section>
 
+    <!-- Feedback form section with a button to open it and fields to submit feedback -->
     <section>
         <button id="feedbackButton3">Give Feedback</button>
+        <!-- Hidden feedback form section that shows up when the button is clicked -->
         <div id="feedbackFormSection3" class="feedback-form-section3" style="display: none;">
-            <h2>Feedback Form</h2>
+            <h2>Feedback Form + Feature Request form</h2>
+            <!-- Form to collect feedback, user’s name, and email -->
             <form id="feedbackForm3">
-                <label for="feedback3">Your Feedback:</label>
+                <label for="feedback3">Your Feedback + Requests:</label>
                 <textarea id="feedback3" rows="4" required></textarea>
                 
                 <label for="feedbackName2">Your Name:</label>
-                <input type="text3" id="feedbackName2">
+                <input type="text" id="feedbackName2">
                 
                 <label for="feedbackEmail2">Your Email:</label>
-                <input type="email3" id="feedbackEmail2">
+                <input type="email" id="feedbackEmail2">
         
+                <!-- Submit button for the feedback form -->
                 <button class="submit-button3">Submit Feedback</button>
             </form>
+            <!-- Placeholder for a response message after feedback is submitted -->
             <p id="feedbackResponse3"></p>
         </div>
     </section>
