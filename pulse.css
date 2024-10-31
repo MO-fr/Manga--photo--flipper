@@ -1,79 +1,79 @@
 /****************************************** MAIN HTML PAGE ************************************************/
 
 /* Grid container for your items */
+
+
+/* Grid container for layout */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
+    gap: 90px; /* Space between columns */
+    justify-items: center; /* Center items within grid cells */
+    padding: 20px; /* Optional padding around grid */
+}
+
+/* Container for Image 1 */
 .container1 {
-display: flex;
-justify-content: center; /* Center horizontally */
-align-items: center;
-width: 19%; /* Container width */
-box-shadow: 0 20px 8px rgba(45, 45, 45, 0.5);
-background-color: #da1313; /* Background color for Image 1 container */
-padding: 20px; /* Adds padding inside the container */
-margin-left: 13px; /* Adjusts the container's position */
-border-radius: 20%; /* Rounds the corners of the container */
-transition: background-color 0.3s ease, transform 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 75%; /* Adjusted to fit in the grid layout */
+    box-shadow: 0 20px 8px rgba(45, 45, 45, 0.5);
+    background-color: #da1313;
+    padding: 20px;
+    border-radius: 20%;
+    transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
-
-.container1:hover{
-background-color: rgb(47, 47, 150);
-transform: scale(1.1); /* Slightly enlarges the button */
+.container1:hover {
+    background-color: rgb(47, 47, 150);
+    transform: scale(1.1);
 }
-
 
 /* Container for Image 2 */
 .container2 {
-display: flex;
-justify-content: center; /* Center horizontally */
-align-items: center;
-margin: -400px;
-width: 19%; /* Container width */
-background-color: #b3be47de; /* Background color for Image 2 container */
-padding: 20px; /* Adds padding inside the container */
-position: relative;
-bottom: 25px;
-left: 866px;
-border-radius: 20%; /* Rounds the corners of the container */
-box-shadow: 0 24px 8px rgba(0, 0, 0, 0.5);
-transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth hover effect */
-}
-.container2:hover{
-background-color: rgb(216, 34, 155);
-transform: scale(1.1); /* Slightly enlarges the button */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 75%; /* Adjusted to fit in the grid layout */
+    background-color: #b3be47de;
+    padding: 20px;
+    border-radius: 20%;
+    box-shadow: 0 24px 8px rgba(0, 0, 0, 0.5);
+    transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
+.container2:hover {
+    background-color: rgb(216, 34, 155);
+    transform: scale(1.1);
+}
 
 /* Container for Image 3 */
-.container3{
-display: flex;
-justify-content: center; /* Center horizontally */
-align-items: center;
-margin: -480px;
-width: 19%; /* Container width */
-background-color: #000000; /* Background color for Image 3 container */
-padding: 20px; /* Adds padding inside the container */
-box-shadow: 0 30px 8px rgba(0, 0, 0, 0.5);
-margin-left: 930px; /* Adjusts the container's position */
-border-radius: 20%; /* Rounds the corners of the container */
-transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth hover effect */
+.container3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 75%; /* Adjusted to fit in the grid layout */
+    background-color: #000000;
+    padding: 20px;
+    box-shadow: 0 30px 8px rgba(0, 0, 0, 0.5);
+    border-radius: 20%;
+    transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
-.container3:hover{
-background-color: rgb(255, 255, 255);
-transform: scale(1.1); /* Slightly enlarges the button */
+.container3:hover {
+    background-color: rgb(255, 255, 255);
+    transform: scale(1.1);
 }
 
-.ippo-img{
-position: relative;
-left: 18px;
-}
-
+/* Image styling */
 div img {
-height: 400px;
-width: 260px;
-border-radius: 60px; 
-display: inline;
+    height: 400px;
+    width: 260px;
+    border-radius: 60px;
+    display: inline;
 }
+
 /********************************************* CSS FOR IPPO *************************************************/
 
 /* Container for Image */

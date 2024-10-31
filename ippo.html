@@ -24,20 +24,20 @@
         <!-- Image of Hajime No Ippo -->
         <img src="https://i.pinimg.com/564x/f7/9d/d2/f79dd2eceea231c956de129f0db4a0de.jpg" class="ippo-img" alt="Image 1">
         <!-- Slider arrow buttons -->
-        <div class="slider-arrow"> &gt;</div>
-        <div class="slider-arrow2" id="arrow2"> &lt;</div>
+       
     </div>
 
-    <!-- Buttons to hide and unhide the image -->
+    <!-- Buttons to hide and unhide the image & paragraph-->
         
-            <button class="hide-button" onclick="hideMangacover('ippo-id')">Hide</button>
-            <button class="unhide-button" onclick="unhideMangacover('ippo-id')">Unhide</button>    
+            <button class="hide-button" onclick="hideElements(['ippo-id', 'par-container'])">Hide</button>
+            <button class="unhide-button" onclick="toggleElementsVisibility(['ippo-id', 'par-container'], true)">Unhide</button>
+    
         
 
     <!-- Paragraph giving a review about Hajime No Ippo -->
-    <div class="par-container">
+    <div class="par-container" id="par-container">
         <p class="vertical-text" style="font-family: 'Impact', sans-serif;">
-            This show is nearly perfect—10/10. Ippo’s journey from a nobody to a skilled boxer, 
+            This show is nearly perfect—10/10. Ippo's journey from a nobody to a skilled boxer, 
             along with well-developed side characters, is incredible. Even the opponent boxers have 
             backstories that make them relatable. The fight choreography and build-ups were top-notch, 
             especially for its time. If you haven't seen it, I highly recommend it—one of the best sports

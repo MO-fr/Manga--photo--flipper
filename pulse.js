@@ -48,9 +48,25 @@ function setupCommentButton(commentButtonId, commentTextAreaId) {
 }
 
 // Helper functions to show/hide manga cover images
-function hideMangacover(playerId, shouldShow) {
-    document.getElementById(playerId).style.display = shouldShow ? 'block' : 'none';
+function hideElements(elementIds) {
+    elementIds.forEach(id => {
+        const element = document.getElementById(id);
+        if (element) {
+            element.style.display = 'none';
+        }
+    });
 }
+
+
+function toggleElementsVisibility(elementIds, shouldShow) {
+    elementIds.forEach(id => {
+        const element = document.getElementById(id);
+        if (element) {
+            element.style.display = shouldShow ? 'block' : 'none';
+        }
+    });
+}
+
 
 // Page-specific configurations
 if (window.location.href.includes("ippo.html")) {
